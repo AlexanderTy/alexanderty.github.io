@@ -8,6 +8,9 @@
   body{
     max-width:600px;
   }
+  .text-xxs{
+    font-size:0.69rem;
+  }
   .search-dropdown__result {
         @apply  w-full text-left self-start cursor-pointer hover:bg-gray-200 active:bg-gray-300 p-2 focus-visible:bg-gray-300 focus-visible:outline-none border-b-2;
 

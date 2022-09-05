@@ -113,21 +113,18 @@
                   <h4 class="self-center" x-text="product.title"></h4>
                 </div>
                 <div class="flex flex-col justify-center">
-                  <h4 class="text-lg">
+                  <h4 class="text-lg w-max">
                     <span x-text="product.price"></span> <span> kr</span>
                   </h4>
-                  <p class="text-xs">
-                    <span
-                      :class="product.stock < 10 && product.stock > 0 ? 'text-orange-500' : product.stock>0 ? 'text-green-500' : 'text-red-500'"
-                      x-text="product.stock"
-                    >
-                    </span>
-                    på lager
-                  </p>
-                </div></a
-              >
-            </li></template
-          >
+                  <p
+                    class="text-xxs w-max"
+                    :class="product.stock < 10 && product.stock > 0 ? 'text-orange-500' : product.stock>0 ? 'text-green-500' : 'text-red-500'"
+                  >
+                    Lager:
+                    <span x-text="product.stock"> </span>
+                  </p></div
+              ></a></li
+          ></template>
 
           <div class="p-2" x-show="empty">
             <h4>Ingen resultater...</h4>
