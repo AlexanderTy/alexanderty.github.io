@@ -94,7 +94,7 @@
         x-cloak
       >
         <ul>
-          <template x-for="product in products">
+          <template x-for="product in products" x-show="!loading">
             <li class="">
               <a
                 href=""
