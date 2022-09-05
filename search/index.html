@@ -34,6 +34,7 @@
           class="w-full border-2 rounded search-bar h-14 pl-2"
           x-model="query"
           @keyup.enter="fetchSearch"
+          aria-label="Search field"
         />
         <div
           x-show="loading"
@@ -71,6 +72,7 @@
           class="w-6 h-[calc(100%-0.5rem)] absolute top-0 right-1 m-1"
           @click="fetchSearch()"
           tabindex="-1"
+          aria-label="Search button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
