@@ -126,8 +126,11 @@
               ></a></li
           ></template>
 
-          <div class="p-2" x-show="empty">
+          <div class="p-2" x-show="empty" x-cloak>
             <h4>Ingen resultater...</h4>
+          </div>
+          <div class="p-2" x-show="loading" x-cloak>
+            <h4>Searching...</h4>
           </div>
         </ul>
       </div>
