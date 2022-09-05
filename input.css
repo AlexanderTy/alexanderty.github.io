@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+  body{
+    max-width:600px;
+  }
+  .search-dropdown__result {
+        @apply  w-full text-left self-start cursor-pointer hover:bg-gray-200 active:bg-gray-300 p-2 focus-visible:bg-gray-300 focus-visible:outline-none border-b-2;
+
+    }
+    .skeleton {
+      animation: skeleton-loading 1s linear infinite alternate;
+      @apply w-16 h-16;
+    }
+    
+    @keyframes skeleton-loading {
+      0% {
+        background-color: hsl(200, 20%, 80%);
+      }
+      100% {
+        background-color: hsl(200, 20%, 95%);
+      }
+    }
+  
+}
